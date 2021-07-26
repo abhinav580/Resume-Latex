@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Abhinav Kumar} \\ \vspace{1pt}
+    \small 9113724912 $|$ \href{mailto:abhinavkumar580@gmail.com}{\underline{abhinavkumar580@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/abhinav580}{\underline{linkedin.com/in/abhinav580}} $|$
+    \href{https://github.com/abhinav580}{\underline{github.com/abhinav580}}
+\end{center}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Development Engineer}{July 2021 -- Present}
+      {McAfee}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Worked with the Tech Transformation team to move the code base from existing tech stack(C\#) to new tech stack(Node Js, PostgreSQL).}
+        \resumeItem{Developed Email Masking functionality for McAfee Anti Virus.  }
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Technical Intern}{Feb. 2021 -- June. 2021}
+      {McAfee}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Worked with automation team to write automated test cases for multiple features.}
+        \resumeItem{Worked on McAfee Anti-Spam feature.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Business Technology Analyst Intern}{Oct 2020 -- Jan 2021}
+      {ZS Associates}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Worked on Data Quality Management for Pharmaceutical data sets.}
+        \resumeItem{Worked on various Proof of Concepts(POCs) with Big Data Research \& Development team.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Siliguri Institute of Technology}{Siliguri, India}
+      {Bachelor of Technology in Computer Science and Engineering. (\textbf{CGPA : 8.82)}}{July. 2017 -- July 2021}
+    \resumeSubheading
+      {DAV Public School Khalari}{Ranchi, India}
+      {Higher Secondary Certificate}{May. 2015 -- Mar 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{E-Learning Portal} $|$ \emph{Django, Python, SQLite}}{July 2020 -- Aug 2020}
+          \resumeItemListStart
+            \resumeItem{A Simple web app developed for Smart India Hackathon, All the basic operations (CRUD) was implemented.}
+            \resumeItem{It also has an admin portal where we can manage courses as well as the orders.}
+            \href{https://github.com/SIXCAPTAINS/BC79_SIXCAPTAINS_RKGIT}{\resumeItem{https://github.com/sixcaptains/bc79\_sixcaptains\_rkgit}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Virtual Piano} $|$ \emph{Python, Open CV}}{June 2019 -- Aug 2019}
+          \resumeItemListStart
+            \resumeItem{A Computer Vision program to play basic music notes of the piano virtually just by moving our fingers in front of the camera.}
+             \href{https://github.com/abhinav580/virtual-Piano}{\resumeItem{https://github.com/abhinav580/virtual-Piano}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, SQL , JavaScript} \\
+     \textbf{Frameworks}{: Node.js, Django} \\
+     \textbf{Developer Tools}{: Git, AWS} \\
+    }}
+ \end{itemize}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Organiser of GDG Siliguri}{: Joined Google Developer Groups as an organiser for Siliguri Chapter where I organise workshops, seminars and Hackathons for the local developers.} \\
+     \hfill \break
+     \textbf{Intel Software Innovator}{: The Intel® Software Innovator program supports innovative, independent developers by providing them speaking and demonstration opportunities at industry events and developer gatherings.} \\
+     \hfill \break
+     \textbf{SIH 2020 Finalist}{: Got selected for Grand Finale of Smart India Hackathon 2020.} \\
+    }}
+ \end{itemize}
+
+
+\end{document}
